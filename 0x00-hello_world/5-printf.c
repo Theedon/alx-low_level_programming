@@ -1,6 +1,10 @@
 #include <stdio.h>
 
-int main(void){
-	printf("With proper grammar, but the outcome is a piece of art,");
-	return(0);
+/**
+ *entry point for main function
+ *int main(void)
+ */
+{
+	printf("with proper grammar, but the outcome is a piece of art,");
+	return (0);
 }	
