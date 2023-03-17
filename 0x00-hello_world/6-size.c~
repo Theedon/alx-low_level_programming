@@ -1,9 +1,0 @@
-#include <stdio.h>
-
-int main(void){
-	printf("Size of a char: %ld byte(s)", sizeof(char));
-	printf("Size of a char: %ld byte(s)", sizeof(int));
-	printf("Size of a char: %ld byte(s)", sizeof(long));
-	printf("Size of a char: %ld byte(s)", sizeof(long long int));
-	printf("Size of a char: %ld byte(s)", sizeof(float));
-}       
