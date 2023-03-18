@@ -1,5 +1,5 @@
 #include <stdio.h>
-
+#include <ctype.h>
 /**
  *main- entry point
  *
@@ -10,12 +10,12 @@ int main(void)
 {
 	int i;
 	int j;
-	int k;
+
 	for (i = 'A'; i <= 'Z'; i++)
 	{
 		putchar(tolower(i));
 	}
-	for (int j = 'A'; j <= 'Z'; i++)
+	for (j = 'A'; j <= 'Z'; i++)
 	{
 		putchar(j);
 	}
