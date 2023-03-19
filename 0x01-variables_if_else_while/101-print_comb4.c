@@ -29,6 +29,7 @@ int main(void)
 					putchar(k % 10 + '0');
 					if (i == 7 && j == 8 && k == 9)
 					{
+						putchar(' ');
 					}
 					else
 					{
