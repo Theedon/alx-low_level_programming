@@ -1,9 +1,7 @@
 #include "main.h"
 
 /**
- *main - entry point
- *
- *Return: 1 if c is lowercase, 0 otherwise
+ *print_alphabet_x10 - print all alpgabets ten times
  */
 
 void print_alphabet_x10(void)
@@ -13,7 +11,7 @@ void print_alphabet_x10(void)
 
 	for (j = 0; j < 10; j++)
 	{
-		for (i = 'a'; i < 'z'; i++)
+		for (i = 'a'; i <= 'z'; i++)
 		{
 			_putchar(i);
 		}

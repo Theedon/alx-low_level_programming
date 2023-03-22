@@ -1,12 +1,14 @@
 #include "main.h"
 
 /**
- *main - entry point
+ *add - add two numbers
+ *@n: integer 1
+ *@i: integer 2
  *
- *Return: returns 0
+ *Return: returns addition of two numbers
  */
 
-int main(int n, int i)
+int add(int n, int i)
 {
-	return(n + i)
+	return (n + i);
 }

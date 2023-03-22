@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- *main - entry point
+ *jack_bauer - print 24 hour time
  *
  *Return: returns void
  */
@@ -10,14 +10,14 @@ void jack_bauer(void)
 {
 	int i;
 	int j;
-        int k;
+	int k;
 	int l;
 
 	for (i = 0; i < 3; i++)
 	{
 		for (j = 0; j < 4; j++)
 		{
-			for (k=0; k < 6; k++)
+			for (k = 0; k < 6; k++)
 			{
 				for (l = 0; l < 10; l++)
 				{

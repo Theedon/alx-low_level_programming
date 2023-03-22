@@ -1,9 +1,10 @@
 #include "main.h"
 
 /**
- *main - entry point
+ *print_sign - print sign of input
+ *@n: integer input
  *
- *Return: returns void
+ *Return: returns 0 or 1
  */
 
 int print_sign(int n)

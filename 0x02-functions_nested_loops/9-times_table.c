@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- *main - entry point
+ *times_table - print times table
  *
  *Return: exit point
  */

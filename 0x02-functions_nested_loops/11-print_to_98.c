@@ -2,7 +2,8 @@
 #include <stdio.h>
 
 /**
- *main - entry point
+ *print_to_98 - print number to 98
+ *@n: integer input as parameter
  *
  *Return: returns void
  */
