@@ -2,8 +2,9 @@
 
 /**
  *_isupper - check if character is capital letter
+ *@c: input parameter
  *
- *
+ *Return: return int
  */
 
 int _isupper(int c)
