@@ -1,6 +1,5 @@
 #include "main.h"
 
-
 /**
  *_strcpy - function that copies a string from one location to another
  *@dest: destination pointer
@@ -21,6 +20,8 @@ char *_strcpy(char *dest, char *src)
 	for (i = 0; i < len; i++)
 	{
 		dest[i] = src[i];
+		if (dest[i] == '\0')
+			break;
 	}
 
 	return (dest);
