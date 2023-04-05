@@ -1,7 +1,10 @@
 #include "main.h"
 
 /**
- *
+ *_strspn - function
+ *@s: input
+ *@accept: input
+ *Return: return int
  */
 
 unsigned int _strspn(char *s, char *accept)

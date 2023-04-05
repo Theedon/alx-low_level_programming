@@ -2,7 +2,10 @@
 #include <stdio.h>
 
 /**
- *
+ *print_diagsums - function
+ *@a: input
+ *@size: input
+ *Return: return void
  */
 
 void print_diagsums(int *a, int size)

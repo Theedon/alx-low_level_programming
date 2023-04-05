@@ -1,7 +1,10 @@
 #include "main.h"
 
 /**
- *
+ *_strpbrk - function
+ *@s: input
+ *@accept: input
+ *Return: return char
  */
 
 char *_strpbrk(char *s, char *accept)
