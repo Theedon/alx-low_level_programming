@@ -17,9 +17,10 @@ void print_diagsums(int *a, int size)
 
 	for (i = 0; i < size; i++)
 	{
-		lsum += a[i][i];
-		rsum += a[j][i];
-		j--
+		lsum += a [(size * i) + i];
+		rsum += a[(size * (i + 1)) - (i  + 1)];
+		j--;
 	}
-	printf("%d, %d", lsum, rsum);
+
+	printf("%d, %d\n", lsum, rsum);
 }

@@ -1,4 +1,5 @@
-#incliude "main.h"
+#include "main.h"
+#include <stdio.h>
 
 /**
  *_strchr - function
@@ -7,11 +8,10 @@
  *Return: return char
  */
 
-char _strchr(char *s, char c)
+char *_strchr(char *s, char c)
 {
 	int i;
 	int present = 0;
-	int position = 0;
 
 	for (i = 0; s[i] != '\0'; i++)
 	{
