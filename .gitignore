@@ -1,5 +1,10 @@
-*.out
+#ignore emacs backup and autosave files respectively
 *~
 *\#*
+
+#ignore executable files (i like to save them as a)
 a
+*.out
+
+#ignore all main.c files (testing files not required to in repo
 *main.c
