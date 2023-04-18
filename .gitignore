@@ -7,4 +7,4 @@ a
 *.out
 
 #ignore all main.c files (testing files not required to in repo
-*main.c
+#*main.c
