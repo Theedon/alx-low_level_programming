@@ -9,9 +9,9 @@
 
 void print_name(char *name, void (*f)(char *))
 {
-	void (*ptr)(char *) = f;
-
-	if(ptr && name)
-		ptr(name);
+	if(ptr == NULL || name == NULL)
+		return;
+	else
+		f(name);
 
 }
