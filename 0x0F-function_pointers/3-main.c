@@ -14,43 +14,36 @@
 
 int main(int argc, char *argv[])
 {
-	int num1, num2;
+	int num1;
+	int num2;
 	int result;
-	int i;
-	int present = 0;
-	int validOperators[5] = {'+', '-', '*', '/', '%'};
+	char symbol;
 	int (*p)(int, int);
 
-	num1 = atoi(argv[1]);
-	num2 = atoi(argv[3]);
 	if (argc != 4)
 	{
 		printf("Error\n");
 		exit(98);
 	}
+	num1 = atoi(argv[1]);
+	num2 = atoi(argv[3]);
 
-	if (num2 == 0 && (strcmp(argv[2], "/") == 0
-			  || strcmp(argv[2], "%") == 0))
-	{
-		printf("Error\n");
-		exit(100);
-	}
-	for (i = 0; i < 5; i++)
-	{
-		if (argv[2][0] == validOperators[i])
-		{
-			present++;
-			break;
-		}
-	}
-	if (present == 0)
+	p = get_op_func(argv[2]);
+	if(p == NULL)
 	{
 		printf("Error\n");
 		exit(99);
 	}
-	p = get_op_func(argv[2]);
-	result = p(num1, num2);
 
+	symbol = *argv[2];
+
+	if((symbol == '/' || symbol == '%') && num2 == 0)
+	{
+		printf("Error\n");
+		exit(100);
+	}
+
+	result = p(num1, num2);
 	printf("%d\n", result);
 	return (0);
 }

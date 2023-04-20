@@ -41,7 +41,6 @@ int op_sub(int a, int b)
 int op_mul(int a, int b)
 {
 	int mul = 0;
-
 	mul = a * b;
 	return (mul);
 }
