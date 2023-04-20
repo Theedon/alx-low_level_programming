@@ -11,7 +11,7 @@ void print_name(char *name, void (*f)(char *))
 {
 	void (*ptr)(char *) = f;
 
-	if(ptr)
+	if(ptr && name)
 		ptr(name);
 
 }
