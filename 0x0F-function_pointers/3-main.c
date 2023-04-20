@@ -25,14 +25,14 @@ int main(int argc, char *argv[])
 	num2 = atoi(argv[3]);
 	if (argc != 4)
 	{
-		printf("Error");
+		printf("Error\n");
 		exit(98);
 	}
 
 	if (num2 == 0 && (strcmp(argv[2], "/") == 0
 			  || strcmp(argv[2], "%") == 0))
 	{
-		printf("Error");
+		printf("Error\n");
 		exit(100);
 	}
 	for (i = 0; i < 5; i++)
@@ -45,7 +45,7 @@ int main(int argc, char *argv[])
 	}
 	if (present == 0)
 	{
-		printf("Error");
+		printf("Error\n");
 		exit(99);
 	}
 	p = get_op_func(argv[2]);
